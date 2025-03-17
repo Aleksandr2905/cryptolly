@@ -1,0 +1,26 @@
+:root {
+  --bg-main-color: #0b0b0f;
+  --section-title-color: #e9eef4;
+  --gray-0-color: #fff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  min-height: 100vh;
+
+  color: var(--gray-0-color);
+  background-color: var(--bg-main-color);
+
+  /* display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px; */
+}

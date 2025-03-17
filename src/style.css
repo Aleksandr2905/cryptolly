@@ -1,0 +1,10 @@
+/* Common styles */
+@import url('./css/reset.css');
+@import url('./css/base.css');
+@import url('./css/container.css');
+@import url('./css/fonts.css');
+
+/* Sections styles */
+@import url('./css/plans.css');
+@import url('./css/about.css');
+@import url('./css/footer.css');
