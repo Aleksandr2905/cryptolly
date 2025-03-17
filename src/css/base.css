@@ -1,7 +1,14 @@
 :root {
+  --primary-color: #b982ff;
   --bg-main-color: #0b0b0f;
   --section-title-color: #e9eef4;
   --gray-0-color: #fff;
+  --gray-10-color: #f8f9fa;
+  --gray-40-color: #ced4da;
+  --gray-50-color: #adb5bd;
+  --gray-60-color: #6e7584;
+  --gray-80-color: #495057;
+  --gray-100-color: #212529;
 }
 
 body {
@@ -23,4 +30,8 @@ body {
   flex-direction: column;
   place-items: center;
   min-width: 320px; */
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }
