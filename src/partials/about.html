@@ -1,5 +1,69 @@
 <section>
-  <div class="container">
-    <h2>ABOUT</h2>
+  <div class="container about__container">
+    <div class="about__wrapper">
+      <div class="about__images">
+        <picture>
+          <source
+            srcset="./img/about-mobile.webp 1x, ./img/about-mobile@2x.webp 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="./img/about-desktop.webp 1x, ./img/about-desktop@2x.webp 2x"
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="./img/about-mobile.webp"
+            alt="bitcoin"
+            class="about__img active"
+            data-content="values"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="./img/about-mobile.webp 1x, ./img/about-mobile@2x.webp 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="./img/about-desktop.webp 1x, ./img/about-desktop@2x.webp 2x"
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="./img/about-mobile.webp"
+            alt="bitcoin"
+            class="about__img"
+            data-content="goals"
+          />
+        </picture>
+      </div>
+
+      <div class="about__content">
+        <p class="section-name">About Us</p>
+        <h2 class="section-title about__title">Company standarts</h2>
+
+        <div class="about__texts">
+          <p class="about__text active" data-content="values">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
+            aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
+          </p>
+          <p class="about__text" data-content="goals">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            deleniti similique neque ea! Iure, placeat maiores repellat debitis
+          </p>
+        </div>
+
+        <div class="about__buttons">
+          <button
+            type="button"
+            class="about__button-left active"
+            data-tab="values"
+          >
+            Цінності
+          </button>
+          <button type="button" class="about__button-right" data-tab="goals">
+            Цілі
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
