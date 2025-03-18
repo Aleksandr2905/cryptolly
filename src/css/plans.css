@@ -26,28 +26,6 @@
   border: 2px solid var(--bg-main-color);
 }
 
-@keyframes gradient-border {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.card:hover {
-  background: linear-gradient(var(--bg-main-color), var(--bg-main-color))
-      padding-box,
-    linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff) border-box;
-  border: 2px solid transparent;
-  background-size: 200% 200%;
-  animation: gradient-border 3s linear infinite;
-  transform: scale(1.05);
-}
-
 .card-one {
   background: radial-gradient(
       64.99% 65.39% at -19.32% 59.18%,
@@ -354,8 +332,26 @@
     font-size: 16px;
   }
 
-  .card {
-    flex: 1 !important;
+  @keyframes gradient-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .card:hover {
+    background: linear-gradient(var(--bg-main-color), var(--bg-main-color))
+        padding-box,
+      linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff) border-box;
+    border: 2px solid transparent;
+    background-size: 200% 200%;
+    animation: gradient-border 3s linear infinite;
+    transform: scale(1.05);
   }
 
   .card-main {
