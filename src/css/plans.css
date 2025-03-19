@@ -26,7 +26,7 @@
   border: 2px solid var(--bg-main-color);
 }
 
-.plans__card-one {
+.plans__card--one {
   background: radial-gradient(
       64.99% 65.39% at -19.32% 59.18%,
       rgba(223, 29, 255, 0.25) 0%,
@@ -45,7 +45,7 @@
     );
 }
 
-.plans__card-two {
+.plans__card--two {
   background: radial-gradient(
       46.55% 56.79% at 0% 105.61%,
       rgba(223, 29, 255, 0.35) 0%,
@@ -64,7 +64,7 @@
     );
 }
 
-.plans__card-three {
+.plans__card--three {
   background: radial-gradient(
       74.55% 80.78% at 55.82% 36.11%,
       rgba(223, 29, 255, 0.25) 0%,

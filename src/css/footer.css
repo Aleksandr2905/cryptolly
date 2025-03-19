@@ -182,11 +182,11 @@
   opacity: 0.3;
 }
 
-.footer__copyright-mobile {
+.footer__copyright--mobile {
   display: block;
 }
 
-.footer__copyright-desktop {
+.footer__copyright--desktop {
   display: none;
 }
 
@@ -249,11 +249,11 @@
     width: 304px;
   }
 
-  .footer__copyright-mobile {
+  .footer__copyright--mobile {
     display: none;
   }
 
-  .footer__copyright-desktop {
+  .footer__copyright--desktop {
     display: block;
     margin-top: 24px;
   }
