@@ -20,13 +20,13 @@
   display: flex;
 }
 
-.card {
+.plans__card {
   position: relative;
   border-radius: 25px;
   border: 2px solid var(--bg-main-color);
 }
 
-.card-one {
+.plans__card-one {
   background: radial-gradient(
       64.99% 65.39% at -19.32% 59.18%,
       rgba(223, 29, 255, 0.25) 0%,
@@ -45,7 +45,7 @@
     );
 }
 
-.card-two {
+.plans__card-two {
   background: radial-gradient(
       46.55% 56.79% at 0% 105.61%,
       rgba(223, 29, 255, 0.35) 0%,
@@ -64,7 +64,7 @@
     );
 }
 
-.card-three {
+.plans__card-three {
   background: radial-gradient(
       74.55% 80.78% at 55.82% 36.11%,
       rgba(223, 29, 255, 0.25) 0%,
@@ -83,39 +83,24 @@
     );
 }
 
-.card-inner {
+.plans__card-inner {
   border-radius: 25px;
   backdrop-filter: blur(50px);
   overflow: hidden;
   border: 1px solid transparent;
 }
 
-.card-inner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  /* background: linear-gradient(
-    135deg,
-    rgba(84, 58, 183, 0.1) 0%,
-    rgba(0, 172, 193, 0.1) 100%
-  ); */
-  z-index: 0;
-}
-
-.card-main {
+.plans__card-main {
   padding: 19px 0;
 }
 
-.card-content {
+.plans__card-content {
   padding: 24px 17px;
   position: relative;
   z-index: 1;
 }
 
-.card-title {
+.plans__card-title {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.2;
@@ -124,7 +109,7 @@
   color: var(--gray-01-color);
 }
 
-.card-subtitle {
+.plans__card-subtitle {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -133,7 +118,7 @@
   color: var(--gray-02-color);
 }
 
-.modules-info {
+.plans__modules-info {
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
@@ -143,19 +128,19 @@
   color: var(--gray-06-color);
 }
 
-.price-container {
+.plans__price-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.price-month {
+.plans__price-month {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.price {
+.plans__price {
   display: flex;
   align-items: center;
   font-size: 24px;
@@ -164,13 +149,13 @@
   color: var(--primary-color);
 }
 
-.price span {
+.plans__price span {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.price-info {
+.plans__price-info {
   display: flex;
   gap: 10px;
   padding: 4px;
@@ -180,17 +165,17 @@
   color: var(--gray-02-color);
 }
 
-.price-info p {
+.plans__price-info p {
   text-decoration: line-through;
 }
 
-.price-total-container {
+.plans__price-total-container {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.price-total {
+.plans__price-total {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -202,14 +187,14 @@
   color: var(--primary-color);
 }
 
-.price-total span {
+.plans__price-total span {
   text-decoration: line-through;
   font-size: 12px;
   line-height: 1.2;
   color: var(--gray-02-color);
 }
 
-.discount {
+.plans__discount {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -220,13 +205,13 @@
   color: var(--gray-09-color);
 }
 
-.divider {
+.plans__divider {
   height: 1px;
   background-color: #b5b5b5;
   margin: 16px 0;
 }
 
-.features {
+.plans__features {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -238,17 +223,17 @@
   color: var(--gray-01-color);
 }
 
-.features li {
+.plans__features li {
   display: flex;
   align-items: flex-start;
 }
 
-.features li::before {
+.plans__features li::before {
   content: '•';
   padding: 0 8px;
 }
 
-.btn {
+.plans__btn {
   display: block;
   width: 100%;
   padding: 13px 32px;
@@ -263,7 +248,7 @@
   color: var(--gray-10-color);
 }
 
-.btn:hover {
+.plans__btn:hover {
   background: linear-gradient(110deg, #18c8ff 14.89%, #933ffe 85.85%);
 }
 
@@ -344,7 +329,7 @@
     }
   }
 
-  .card:hover {
+  .plans__card:hover {
     background: linear-gradient(var(--bg-main-color), var(--bg-main-color))
         padding-box,
       linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff) border-box;
@@ -354,11 +339,11 @@
     transform: scale(1.05);
   }
 
-  .card-main {
+  .plans__card-main {
     padding: 20px 12px;
   }
 
-  .card-content {
+  .plans__card-content {
     padding: 27px 22px;
   }
 

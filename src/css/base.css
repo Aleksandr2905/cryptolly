@@ -32,11 +32,6 @@ body {
 
   color: var(--gray-0-color);
   background-color: var(--bg-main-color);
-
-  /* display: flex;
-  flex-direction: column;
-  place-items: center;
-  min-width: 320px; */
 }
 
 * {
