@@ -5,6 +5,7 @@
 @import url('./css/fonts.css');
 
 /* Sections styles */
+@import url('./css/accordion.css');
 @import url('./css/plans.css');
 @import url('./css/about.css');
 @import url('./css/footer.css');

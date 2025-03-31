@@ -58,3 +58,29 @@ body {
     font-size: 50px;
   }
 }
+
+.gradient-border-card {
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(
+    225deg,
+    rgba(41, 46, 75, 0.75) 0%,
+    rgba(41, 46, 75, 0.35) 100%
+  );
+  backdrop-filter: blur(104.8px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.gradient-border-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}

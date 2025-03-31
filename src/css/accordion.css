@@ -1,0 +1,122 @@
+/* Accordion */
+
+.accordion__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.accordion__list-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion__item {
+  padding: 2px;
+  border-radius: 20px;
+  background: radial-gradient(
+      113.51% 120.51% at 86.86% 110.24%,
+      rgba(223, 29, 255, 0.4) 0%,
+      rgba(72, 205, 255, 0) 100%
+    ),
+    radial-gradient(
+      51.59% 79.45% at -5.37% -16.9%,
+      rgba(61, 165, 245, 0.5) 0%,
+      rgba(62, 238, 227, 0.1) 58.6%,
+      rgba(62, 69, 238, 0) 94.1%
+    ),
+    linear-gradient(
+      98deg,
+      rgba(41, 46, 75, 0.38) 0%,
+      rgba(41, 46, 75, 0.17) 100%,
+      rgba(48, 58, 120, 0.5) 100%
+    );
+}
+
+.accordion__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 22px;
+  border-radius: 18px;
+  backdrop-filter: blur(52px);
+}
+
+.accordion__item-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.accordion__item-img {
+  display: flex;
+  width: 43px;
+  height: 61px;
+}
+
+.accordion__item-img img {
+  margin-left: -4px;
+  margin-top: -6px;
+  width: 58px;
+  height: 74px;
+}
+
+.accordion__item-header-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+  color: var(--gray-06-color);
+  transition: color 0.3s ease;
+}
+
+.accordion__item--active .accordion__item-header-title {
+  color: var(--primary-color);
+}
+
+.accordion__item-header svg {
+  margin-left: auto;
+  transform: rotate(-90deg);
+}
+
+.accordion__item-content {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion__item--active .accordion__item-content {
+  max-height: 1000px;
+}
+
+.accordion__item svg {
+  transition: transform 0.3s ease;
+}
+
+.accordion__item--active svg {
+  transform: rotate(-270deg);
+}
+
+.accordion__item-content h3 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  color: var(--gray-0-color);
+}
+
+.accordion__item-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 146%;
+  color: var(--gray-30-color);
+}
+
+.accordion__item-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--gray-0-color);
+}
