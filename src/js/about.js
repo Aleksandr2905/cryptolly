@@ -9,13 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const tabName = button.dataset.tab;
 
-      document.querySelectorAll('.about__img').forEach(img => {
+      document.querySelectorAll('.about__img-one').forEach(img => {
+        img.classList.toggle('active', img.dataset.content === tabName);
+      });
+
+      document.querySelectorAll('.about__img-two').forEach(img => {
         img.classList.toggle('active', img.dataset.content === tabName);
       });
 
       document.querySelectorAll('.about__text').forEach(text => {
         text.classList.toggle('active', text.dataset.content === tabName);
       });
+
+      document
+        .querySelectorAll('.section-title--about-title span')
+        .forEach(title => {
+          title.classList.toggle('active', title.dataset.content === tabName);
+        });
     });
   });
 });

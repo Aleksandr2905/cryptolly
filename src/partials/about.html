@@ -4,34 +4,46 @@
       <div class="about__images">
         <picture>
           <source
-            srcset="/img/about-mobile.webp 1x, /img/about-mobile@2x.webp 2x"
+            srcset="
+              /img/about/about-1-mobile.webp    1x,
+              /img/about/about-1-mobile@2x.webp 2x
+            "
             media="(max-width: 1439px)"
           />
           <source
-            srcset="/img/about-desktop.webp 1x, /img/about-desktop@2x.webp 2x"
+            srcset="
+              /img/about/about-1-desktop.webp    1x,
+              /img/about/about-1-desktop@2x.webp 2x
+            "
             media="(min-width: 1440px)"
           />
           <img
-            src="/img/about-mobile.webp"
+            src="/img/about/about-1-mobile.webp"
             alt="bitcoin"
-            class="about__img active"
+            class="about__img about__img-one active"
             data-content="values"
             loading="lazy"
           />
         </picture>
         <picture>
           <source
-            srcset="/img/about-mobile.webp 1x, /img/about-mobile@2x.webp 2x"
+            srcset="
+              /img/about/about-2-mobile.webp    1x,
+              /img/about/about-2-mobile@2x.webp 2x
+            "
             media="(max-width: 1439px)"
           />
           <source
-            srcset="/img/about-desktop.webp 1x, /img/about-desktop@2x.webp 2x"
+            srcset="
+              /img/about/about-2-desktop.webp    1x,
+              /img/about/about-2-desktop@2x.webp 2x
+            "
             media="(min-width: 1440px)"
           />
           <img
-            src="/img/about-mobile.webp"
-            alt="bitcoin"
-            class="about__img"
+            src="/img/about/about-2-mobile.webp"
+            alt="bitcoin 2"
+            class="about__img about__img-two"
             data-content="goals"
             loading="lazy"
           />
@@ -41,7 +53,8 @@
       <div class="about__content">
         <p class="section-name">About Us</p>
         <h2 class="section-title section-title--about-title">
-          Company standarts
+          <span class="active" data-content="values">Company standarts</span>
+          <span data-content="goals">Company Goals</span>
         </h2>
 
         <div class="about__texts">
@@ -50,8 +63,9 @@
             aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
           </p>
           <p class="about__text" data-content="goals">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            deleniti similique neque ea! Iure, placeat maiores repellat debitis
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
+            aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
+            consectetur adipiscing elit.
           </p>
         </div>
 
