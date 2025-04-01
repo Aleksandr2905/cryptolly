@@ -11,3 +11,10 @@
     padding: 0 130px;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding: 0 250px;
+  }
+}

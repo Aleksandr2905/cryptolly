@@ -1,7 +1,8 @@
 /* Modules section */
 
 .modules__container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +38,7 @@
   display: flex;
   flex-direction: column;
   padding: 38px 19px;
-  width: 100%;
+  width: 375px;
   border-top: 1px solid #8b8b8b;
   border-bottom: 1px solid #8b8b8b;
   background: linear-gradient(
@@ -216,11 +217,13 @@
 
 .modules__item-description-wrapper.is-open {
   opacity: 1;
-  max-height: 500px;
+  max-height: 200px;
   margin-top: 8px;
 }
 
 .modules__item-description-btn {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
@@ -246,6 +249,10 @@
   }
 }
 
+.modules__right-side {
+  display: none;
+}
+
 @media (min-width: 1440px) {
   .modules__container {
     padding-top: 100px;
@@ -253,8 +260,82 @@
     gap: 80px;
   }
 
-  .modules__container p {
-    width: 500px;
+  .modules__list {
+    gap: 24px;
+  }
+
+  .modules__item {
+    position: relative;
+    padding: 28px 100px;
+    width: 100%;
+    border: 1px solid #8b8b8b;
+    border-radius: 16px;
+  }
+
+  .modules__item-title {
+    font-size: 32px;
+  }
+
+  .modules__item-header svg {
+    display: none;
+  }
+
+  .modules__item-description {
+    opacity: 1;
+    max-height: none;
+    width: 514px;
     font-size: 16px;
+    margin-top: 8px;
+    overflow: visible;
+  }
+
+  .modules__item-title-btn {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .modules__item-btn-wrapper {
+    font-size: 14px;
+  }
+
+  .modules__item-btn-close {
+    display: none;
+  }
+
+  .modules__item-description-wrapper {
+    align-items: flex-start;
+  }
+
+  .modules__item-description-btn {
+    font-size: 16px;
+    max-width: 514px;
+  }
+
+  .modules__right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 228px;
+    height: 100%;
+    border-radius: 111.5px 16px 16px 111.5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: radial-gradient(
+      86.08% 109.17% at 50% -16.14%,
+      rgba(255, 255, 255, 0.36) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(2.5px);
+  }
+
+  .modules__right-side img {
+    position: absolute;
+    margin-top: -24px;
+    right: 0;
+    width: 205px;
+    height: 205px;
+    object-position: 0px 0px;
   }
 }

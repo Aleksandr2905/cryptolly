@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const moduleItems = document.querySelectorAll('.modules__item');
+  const isDesktop = window.innerWidth >= 1440;
 
   moduleItems.forEach(item => {
     const header = item.querySelector('.modules__item-header');
@@ -14,32 +15,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = item.querySelector('.modules__item-btn-close');
     let activeBtn = null;
 
-    header.addEventListener('click', () => {
-      const isOpen = description.classList.contains('is-open');
+    if (!isDesktop) {
+      header.addEventListener('click', () => {
+        const isOpen = description.classList.contains('is-open');
 
-      if (isOpen) {
-        description.classList.remove('is-open');
-        item.classList.remove('modules__item--active');
-      } else {
-        description.classList.add('is-open');
-        item.classList.add('modules__item--active');
-      }
-    });
+        if (isOpen) {
+          description.classList.remove('is-open');
+          item.classList.remove('modules__item--active');
+        } else {
+          description.classList.add('is-open');
+          item.classList.add('modules__item--active');
+        }
+      });
+    }
 
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
+        const isCurrentBtnActive = btn === activeBtn;
+        const btnDescription = btn.getAttribute('data-description');
+
         if (activeBtn) {
           activeBtn.classList.remove('is-active');
+        }
+
+        if (isCurrentBtnActive) {
+          descriptionWrapper.classList.remove('is-open');
+          activeBtn = null;
+          return;
         }
 
         btn.classList.add('is-active');
         activeBtn = btn;
 
-        const btnDescription = btn.getAttribute('data-description');
         if (descriptionText) {
-          descriptionText.textContent = btnDescription;
+          if (descriptionWrapper.classList.contains('is-open')) {
+            descriptionText.style.opacity = '0';
+            setTimeout(() => {
+              descriptionText.textContent = btnDescription;
+              descriptionText.style.opacity = '1';
+            }, 150);
+          } else {
+            descriptionText.textContent = btnDescription;
+            descriptionWrapper.classList.add('is-open');
+          }
         }
-        descriptionWrapper.classList.add('is-open');
       });
     });
 
@@ -50,5 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
         activeBtn = null;
       }
     });
+  });
+
+  window.addEventListener('resize', () => {
+    const newIsDesktop = window.innerWidth >= 1440;
+    if (newIsDesktop !== isDesktop) {
+      location.reload();
+    }
   });
 });
