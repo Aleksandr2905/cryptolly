@@ -55,14 +55,6 @@
     );
 }
 
-/* .services__item-wrapper::before {
-  content: '';
-  position: absolute;
-  border-radius: inherit;
-  background: rgba(0, 0, 255, 0.6);
-  backdrop-filter: blur(50px);
-} */
-
 .services__item {
   display: flex;
   flex-direction: column;
@@ -70,6 +62,7 @@
   padding: 27px 19px;
   border-radius: 23px;
   backdrop-filter: blur(50px);
+  outline: 2px solid rgba(233, 236, 239, 0.15);
 }
 
 .services__item-title {
