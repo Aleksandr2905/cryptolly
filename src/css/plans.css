@@ -347,3 +347,9 @@
     display: none !important;
   }
 }
+
+@media (min-width: 1920px) {
+  .swiper {
+    width: 1180px !important;
+  }
+}

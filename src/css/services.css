@@ -155,3 +155,10 @@
     color: var(--gray-50-color);
   }
 }
+
+@media (min-width: 1920px) {
+  .services__item {
+    width: 460px;
+    padding: 19px 64px;
+  }
+}
