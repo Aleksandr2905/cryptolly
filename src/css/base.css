@@ -16,6 +16,8 @@
   --gray-100-color: #212529;
   --yellow-color: #ffcf0f;
   --gradient-color: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+  --gradient-border: linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff)
+    border-box;
 }
 
 body {
@@ -83,4 +85,16 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
