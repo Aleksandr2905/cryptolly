@@ -64,6 +64,10 @@
   border: 2px solid rgba(233, 236, 239, 0.15);
 }
 
+.services__item-icon {
+  display: none;
+}
+
 .services__item-title {
   font-size: 24px;
   font-weight: 900;
@@ -97,4 +101,57 @@
   border: 2px solid transparent;
   background-size: 200% 200%;
   animation: gradient-border 3s linear infinite;
+}
+
+@media (min-width: 1440px) {
+  .services__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .services__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .services__list::before {
+    content: url(/img/star-4.svg);
+    position: absolute;
+    top: -149px;
+    left: 26px;
+    width: 87px;
+    height: 135px;
+    z-index: 11;
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .services__item {
+    width: 380px;
+    gap: 16px;
+    padding: 19px 24px;
+    border: 2px solid transparent;
+  }
+
+  .services__item-icon {
+    display: block;
+  }
+
+  .services__item-title {
+    font-size: 32px;
+    font-weight: 600;
+    height: 84px;
+  }
+
+  .services__item-subtitle {
+    display: none;
+  }
+
+  .services__item-line {
+    display: none;
+  }
+
+  .services__item-description {
+    color: var(--gray-50-color);
+  }
 }
