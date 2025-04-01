@@ -71,8 +71,6 @@
 }
 
 .team__slide-profile {
-  /* position: relative; */
-  /* flex: 0 0 250px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -141,13 +139,14 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(104px);
-  /* position: relative; */
 }
 
 .team__slide-info-wrapper {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(181, 181, 181, 0.15);
 }
 
 .team__slide-info-title {
@@ -161,8 +160,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  padding-bottom: 17px;
-  border-bottom: 1px solid rgba(181, 181, 181, 0.15);
   color: var(--gray-30-color);
 }
 
@@ -220,7 +217,6 @@
 .team__slide-nav-button {
   position: absolute;
   bottom: 24px;
-  /* transform: translateY(-50%); */
   border: none;
   width: 60px;
   height: 60px;
@@ -279,4 +275,100 @@
       rgba(37, 40, 58, 0.11) 100%,
       rgba(41, 46, 75, 0.11) 100%
     );
+}
+
+.team__quote-icon {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .team__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 80px;
+  }
+
+  .team__description {
+    width: 500px;
+    font-size: 16px;
+  }
+
+  .team__slider {
+    width: 1090px;
+  }
+
+  .team__slide {
+    width: 1090px;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .team__slide-profile {
+    gap: 27px;
+    padding: 30px;
+    height: 458px;
+  }
+
+  .team__slide-profile-img {
+    width: 335px;
+    height: 252px;
+  }
+
+  .team__slide-border-info {
+    margin-top: auto;
+    height: 343px;
+  }
+
+  .team__slide-info {
+    padding: 50px 40px 72px;
+  }
+
+  .team__slide-info-wrapper {
+    position: relative;
+    padding-bottom: 36px;
+  }
+
+  .team__slide-info-title {
+    margin-top: 3px;
+    font-size: 32px;
+  }
+
+  .team__slide-info-rating {
+    position: absolute;
+    right: 0;
+    top: 28px;
+  }
+
+  .team__slide-info-description {
+    font-size: 16px;
+    height: 76px;
+    margin: 27px 0 0;
+  }
+
+  .team__slide-nav-button {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+  }
+
+  .team__slide-prev-button {
+    left: 950px;
+  }
+
+  .team__slide-next-button {
+    right: 0;
+  }
+
+  .team__slide-navigation {
+    position: relative;
+    bottom: 0;
+    margin-top: 25px;
+  }
+
+  .team__quote-icon {
+    display: block;
+    position: absolute;
+    top: -107px;
+    left: 0;
+  }
 }
