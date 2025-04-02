@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let totalSlides = slides.length;
     let isScrolling = false;
-    let isMobile = window.innerWidth <= 768;
+    let isMobile = window.innerWidth <= 375;
 
     // Проверяем data-title атрибуты всех слайдов
     slides.forEach((slide, index) => {
