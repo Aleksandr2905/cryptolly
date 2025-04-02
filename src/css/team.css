@@ -375,14 +375,3 @@
     left: 0;
   }
 }
-
-/* Пример стиля для второго элемента списка */
-.some-list > li:nth-child(2) {
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-/* Альтернативный вариант с использованием nth-of-type */
-.some-list > :nth-of-type(2) {
-  background-color: rgba(223, 29, 255, 0.1);
-}

@@ -5,6 +5,7 @@
 @import url('./css/fonts.css');
 
 /* Sections styles */
+@import url('./css/header.css');
 @import url('./css/token.css');
 @import url('./css/services.css');
 @import url('./css/team.css');
@@ -13,3 +14,4 @@
 @import url('./css/plans.css');
 @import url('./css/about.css');
 @import url('./css/footer.css');
+@import url('./css/mobile-menu.css');
