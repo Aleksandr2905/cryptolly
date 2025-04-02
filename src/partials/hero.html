@@ -1,33 +1,70 @@
 <section>
   <div class="hero-bg">
-    <img
-      srcset="
-        /img/hero/bitcoin-1-mobile.webp    1x,
-        /img/hero/bitcoin-1-mobile@2x.webp 2x
-      "
-      src="/img/hero/bitcoin-1-mobile.webp"
-      alt="bitcoin"
-      class="hero__img-1"
-    />
+    <picture>
+      <source
+        srcset="
+          /img/hero/bitcoin-1-mobile.webp    1x,
+          /img/hero/bitcoin-1-mobile@2x.webp 2x
+        "
+        media="(max-width: 1439px)"
+      />
+      <source
+        srcset="
+          /img/hero/bitcoin-1-desktop.webp    1x,
+          /img/hero/bitcoin-1-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <img
+        src="/img/hero/bitcoin-1-mobile.webp"
+        alt="bitcoin"
+        class="hero__img-1"
+      />
+    </picture>
 
-    <img
-      srcset="
-        /img/hero/bitcoin-2-mobile.webp    1x,
-        /img/hero/bitcoin-2-mobile@2x.webp 2x
-      "
-      src="/img/hero/bitcoin-2-mobile.webp"
-      alt="bitcoin"
-      class="hero__img-2"
-    />
-    <img
-      srcset="
-        /img/hero/etherium-mobile.webp    1x,
-        /img/hero/etherium-mobile@2x.webp 2x
-      "
-      src="/img/hero/etherium-mobile.webp"
-      alt="etherium"
-      class="hero__img-3"
-    />
+    <picture>
+      <source
+        srcset="
+          /img/hero/bitcoin-2-mobile.webp    1x,
+          /img/hero/bitcoin-2-mobile@2x.webp 2x
+        "
+        media="(max-width: 1439px)"
+      />
+      <source
+        srcset="
+          /img/hero/bitcoin-2-desktop.webp    1x,
+          /img/hero/bitcoin-2-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <img
+        src="/img/hero/bitcoin-2-mobile.webp"
+        alt="bitcoin"
+        class="hero__img-2"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="
+          /img/hero/etherium-mobile.webp    1x,
+          /img/hero/etherium-mobile@2x.webp 2x
+        "
+        media="(max-width: 1439px)"
+      />
+      <source
+        srcset="
+          /img/hero/etherium-desktop.webp    1x,
+          /img/hero/etherium-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <img
+        src="/img/hero/etherium-mobile.webp"
+        alt="etherium"
+        class="hero__img-3"
+      />
+    </picture>
   </div>
   <div class="container hero__container">
     <div class="hero__items">
@@ -35,12 +72,24 @@
         <p class="hero__item-text">
           <span>2,000+</span> lorem ipsum dolor sit amet
         </p>
-        <img
-          srcset="/img/hero/avatars-1.webp 1x, /img/hero/avatars-1@2x.webp 2x"
-          src="/img/hero/avatars-1.webp"
-          alt="avatars"
-          class="hero__item-img"
-        />
+        <picture>
+          <source
+            srcset="/img/hero/avatars-1.webp 1x, /img/hero/avatars-1@2x.webp 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="
+              /img/hero/avatars-1-desktop.webp    1x,
+              /img/hero/avatars-1-desktop@2x.webp 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="/img/hero/avatars-1.webp"
+            alt="avatars"
+            class="hero__item-img"
+          />
+        </picture>
       </div>
       <div class="hero__item-2">
         <p class="hero__item-text hero__item-text-2">
@@ -57,12 +106,24 @@
         <p class="hero__item-text">
           <span>5,000+</span> lorem ipsum dolor sit amet
         </p>
-        <img
-          srcset="/img/hero/avatars-3.webp 1x, /img/hero/avatars-3@2x.webp 2x"
-          src="/img/hero/avatars-3.webp"
-          alt="avatars"
-          class="hero__item-img"
-        />
+        <picture>
+          <source
+            srcset="/img/hero/avatars-3.webp 1x, /img/hero/avatars-3@2x.webp 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="
+              /img/hero/avatars-3-desktop.webp    1x,
+              /img/hero/avatars-3-desktop@2x.webp 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="/img/hero/avatars-3.webp"
+            alt="avatars"
+            class="hero__item-img"
+          />
+        </picture>
       </div>
     </div>
     <div class="hero__title-container">

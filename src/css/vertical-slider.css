@@ -215,6 +215,21 @@
     padding-bottom: 100px;
   }
 
+  .vertical-slider__container::before {
+    top: 264px;
+    left: -118px;
+    width: 476px;
+    height: 278px;
+  }
+
+  .vertical-slider__container::after {
+    top: 5px;
+    left: -409px;
+    width: 990px;
+    height: 532px;
+    border-radius: 990px;
+  }
+
   .vertical-slider__content {
     width: 100%;
     flex-direction: row;

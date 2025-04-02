@@ -122,6 +122,22 @@
     gap: 100px;
   }
 
+  .token::before {
+    top: -656px;
+    top: -350px;
+    right: calc(50% - 822px);
+    width: 290px;
+    height: 412px;
+  }
+
+  .token::after {
+    top: -612px;
+    right: calc(50% - 944px);
+    width: 603px;
+    height: 603px;
+    border-radius: 603px;
+  }
+
   .token__description {
     font-size: 16px;
     width: 500px;
