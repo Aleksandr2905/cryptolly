@@ -205,14 +205,14 @@ document.addEventListener('DOMContentLoaded', () => {
           // Если прокрутили больше половины слайда, переходим к следующему
           if (
             scrollProgress > 0.5 &&
-            visibleIndex < totalSlides - VISIBLE_SLIDES
+            visibleIndex < totalSlides - VISIBLE_SLIDES + 1
           ) {
             visibleIndex++;
           }
 
           if (
             visibleIndex >= 0 &&
-            visibleIndex < totalSlides &&
+            visibleIndex < totalSlides - 1 &&
             visibleIndex !== currentIndex
           ) {
             // Обновляем текущий индекс
