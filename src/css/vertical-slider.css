@@ -5,6 +5,39 @@
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+}
+
+.vertical-slider__container::before {
+  content: '';
+  position: absolute;
+  top: 68px;
+  left: -88px;
+  width: 236px;
+  height: 250px;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 75, 255, 0) 0%,
+    rgba(23, 74, 255, 0.8) 100%
+  );
+  filter: blur(100px);
+}
+
+.vertical-slider__container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  left: -215px;
+  width: 490px;
+  height: 368px;
+  border-radius: 490.429px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 194, 255, 0) 0%,
+    rgba(255, 41, 195, 0.8) 100%
+  );
+  filter: blur(175px);
 }
 
 .vertical-slider__content {
