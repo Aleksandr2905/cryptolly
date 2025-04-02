@@ -5,6 +5,7 @@
 @import url('./css/fonts.css');
 
 /* Sections styles */
+@import url('./css/token.css');
 @import url('./css/services.css');
 @import url('./css/team.css');
 @import url('./css/modules.css');
