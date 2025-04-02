@@ -32,22 +32,10 @@
 }
 
 .team__slider-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.team__slider {
   display: flex;
-  width: 345px;
-  transition: transform 0.5s ease;
-}
-
-.team__slide {
-  min-width: 100%;
-  display: flex;
-  width: 345px;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .team__slide-border {
@@ -281,6 +269,24 @@
   display: none;
 }
 
+.team__slide-profile-img,
+.team__slide-profile-info-title,
+.team__slide-profile-info-name,
+.team__slide-profile-info-subtitle,
+.team__slide-info-title,
+.team__slide-info-subtitle,
+.team__slide-info-description {
+  transition: opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 @media (min-width: 1440px) {
   .team__container {
     padding-top: 100px;
@@ -293,14 +299,12 @@
     font-size: 16px;
   }
 
-  .team__slider {
-    width: 1090px;
-  }
-
-  .team__slide {
-    width: 1090px;
+  .team__slider-container {
+    display: flex;
     flex-direction: row;
     gap: 40px;
+    width: 1090px;
+    margin-bottom: 35px;
   }
 
   .team__slide-profile {
@@ -320,6 +324,7 @@
   }
 
   .team__slide-info {
+    width: 655px;
     padding: 50px 40px 72px;
   }
 
@@ -360,9 +365,7 @@
   }
 
   .team__slide-navigation {
-    position: relative;
-    bottom: 0;
-    margin-top: 25px;
+    bottom: -35px;
   }
 
   .team__quote-icon {
