@@ -3,6 +3,20 @@
 .hero__container {
   padding-top: 100px;
   padding-bottom: 60px;
+  position: relative;
+}
+
+.hero__container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  left: -80px;
+  width: 296px;
+  height: 296px;
+  border-radius: 296px;
+  background: linear-gradient(180deg, #173b80 0%, #11573e 100%);
+  filter: blur(100px);
 }
 
 .hero-bg {
@@ -236,6 +250,19 @@
 
 .hero__title-container {
   position: relative;
+}
+
+.hero__title-container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -290px;
+  left: -80px;
+  width: 675px;
+  height: 314px;
+  border-radius: 675px;
+  background: #7000ff;
+  filter: blur(200px);
 }
 
 .hero__title {
