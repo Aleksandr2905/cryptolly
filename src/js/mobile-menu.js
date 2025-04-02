@@ -34,10 +34,26 @@
   }
 
   function disableScroll() {
+    const scrollY = window.scrollY;
+    refs.body.style.position = 'fixed';
+    refs.body.style.top = `-${scrollY}px`;
+    refs.body.style.left = '0';
+    refs.body.style.right = '0';
+    refs.body.style.width = '100%';
     refs.body.style.overflow = 'hidden';
+    refs.body.dataset.scrollY = scrollY;
   }
 
   function enableScroll() {
+    refs.body.style.position = '';
+    refs.body.style.top = '';
+    refs.body.style.left = '';
+    refs.body.style.right = '';
+    refs.body.style.width = '';
     refs.body.style.overflow = '';
+
+    const scrollY = parseInt(refs.body.dataset.scrollY || '0');
+    window.scrollTo(0, scrollY);
+    delete refs.body.dataset.scrollY;
   }
 })();
