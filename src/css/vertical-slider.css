@@ -81,14 +81,44 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow-y: auto;
-  height: 271px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(24, 200, 255, 0.5) rgba(255, 255, 255, 0.1);
+  overflow-y: scroll;
+  height: 300px;
+  min-height: 300px;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(24, 200, 255, 0.5) rgba(255, 255, 255, 0.1) !important;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   touch-action: pan-y;
   -webkit-overflow-scrolling: touch;
+  padding-right: 16px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.vertical-slider__slides::after {
+  content: '';
+  display: block;
+  min-height: 100px;
+}
+
+.vertical-slider__slides::-webkit-scrollbar {
+  width: 8px;
+  display: block;
+}
+
+.vertical-slider__slides::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+.vertical-slider__slides::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #18c8ff 0%, #933ffe 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(24, 200, 255, 0.5);
+  min-height: 50px;
 }
 
 .vertical-slider__slide {
@@ -132,25 +162,6 @@
   position: absolute;
 }
 
-.vertical-slider__slides::-webkit-scrollbar {
-  width: 8px;
-  opacity: 1;
-}
-
-.vertical-slider__slides::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  margin: 4px 0;
-}
-
-.vertical-slider__slides::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #18c8ff 0%, #933ffe 100%);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  opacity: 1;
-  box-shadow: 0 0 10px rgba(24, 200, 255, 0.3);
-}
-
 .vertical-slider__slide {
   opacity: 0.8;
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
@@ -168,13 +179,25 @@
 
 @media (max-width: 768px) {
   .vertical-slider__slides {
-    overflow-y: auto;
+    overflow-y: scroll;
     touch-action: pan-y;
     -webkit-overflow-scrolling: touch;
-    padding: 0 16px;
+    padding: 0 16px 0 0;
+    height: 350px;
   }
 
   .vertical-slider__slide {
     scroll-snap-align: center;
+    margin-bottom: 10px;
+  }
+
+  .vertical-slider__slides::-webkit-scrollbar {
+    width: 8px;
+    display: block;
+  }
+
+  .vertical-slider__slides::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #18c8ff 0%, #933ffe 100%);
+    min-height: 40px;
   }
 }
