@@ -19,7 +19,7 @@
   border: none;
 }
 
-.header__nav-list {
+.header__nav {
   display: none;
 }
 
@@ -30,6 +30,10 @@
 @media (min-width: 1440px) {
   .header__burger {
     display: none;
+  }
+
+  .header__nav {
+    display: block;
   }
 
   .header__nav-list {
