@@ -191,7 +191,7 @@
     right: 53px;
     width: 61px;
     height: 60px;
-    animation: sparkle 2s ease-in-out infinite 1s;
+    animation: sparkle 3s ease-in-out infinite 1s;
   }
 
   .accordion__list-desktop {

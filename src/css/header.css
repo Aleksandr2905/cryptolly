@@ -6,11 +6,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 11; */
+  z-index: 11;
+}
+
+.header__container::before {
+  content: url(/img/star-6.svg);
+  position: absolute;
+  right: 90px;
+  bottom: 18px;
+  width: 27px;
+  height: 27px;
+  transform: rotate(-12deg);
+  animation: sparkle 2s ease-in-out infinite;
 }
 
 .header__burger {

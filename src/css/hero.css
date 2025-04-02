@@ -1,0 +1,335 @@
+/* Hero section */
+
+.hero__container {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.hero__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 52px;
+  position: relative;
+}
+
+.hero__items::before {
+  content: url('/img/hero/bitcoin-1-mobile.webp');
+  position: absolute;
+  top: -231px;
+  left: -138px;
+  width: 212px;
+  height: 228px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__items::before {
+    content: url('/img/hero/bitcoin-1-mobile@2x.webp');
+  }
+}
+
+.hero__items::after {
+  content: url('/img/hero/etherium-mobile.webp');
+  position: absolute;
+  top: -90px;
+  right: -14px;
+  width: 52px;
+  height: 52px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__items::after {
+    content: url('/img/hero/etherium-mobile@2x.webp');
+  }
+}
+
+.hero__item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 97px;
+  height: 191px;
+  transform: rotate(10deg);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(
+      59.66% 93.52% at 17.69% 100%,
+      rgba(223, 29, 255, 0.35) 0%,
+      rgba(72, 205, 255, 0) 100%
+    ),
+    radial-gradient(
+      96.91% 150.88% at 137.44% 90.44%,
+      rgba(62, 238, 227, 0.5) 29.6%,
+      rgba(62, 69, 238, 0) 100%
+    ),
+    linear-gradient(
+      355deg,
+      rgba(41, 46, 75, 0.52) 8.5%,
+      rgba(37, 40, 58, 0.24) 87.31%,
+      rgba(41, 46, 75, 0.24) 87.31%
+    );
+
+  box-shadow: 0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  position: relative;
+}
+
+.hero__item-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 190px;
+  border-radius: 40px;
+  background: linear-gradient(
+    341deg,
+    rgba(89, 89, 89, 0.28) 5.93%,
+    rgba(255, 255, 255, 0.28) 79.34%
+  );
+  box-shadow: 0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+}
+
+.hero__item-text {
+  width: 80px;
+  height: 54px;
+  transform: rotate(-10deg);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--gray-0-color);
+
+  & span {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 130%;
+  }
+}
+
+.hero__item-img {
+  width: 90px;
+  height: 30px;
+  object-fit: cover;
+  transform: rotate(-10deg);
+}
+
+.hero__item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 112px;
+  height: 242px;
+  transform: rotate(10deg);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(
+      88.53% 95.06% at 100% 5.38%,
+      rgba(223, 29, 255, 0.5) 0%,
+      rgba(72, 205, 255, 0) 100%
+    ),
+    radial-gradient(
+      110.05% 101.52% at 8.46% 139.64%,
+      rgba(62, 238, 227, 0.5) 49.21%,
+      rgba(62, 69, 238, 0) 100%
+    ),
+    linear-gradient(
+      148deg,
+      rgba(32, 33, 46, 0.8) 19.24%,
+      rgba(37, 40, 58, 0.4) 100%,
+      rgba(41, 46, 75, 0.28) 100%
+    );
+  box-shadow: 0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  position: relative;
+}
+
+.hero__item-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+  height: 242px;
+  border-radius: 40px;
+  background: linear-gradient(
+    167deg,
+    rgba(255, 255, 255, 0.28) 8.69%,
+    rgba(89, 89, 89, 0.28) 89.79%
+  );
+  box-shadow: -9px 0px 15px 0px rgba(182, 255, 251, 0.15) inset,
+    0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+}
+
+.hero__item-2::after {
+  content: url('/img/star-8.svg');
+  position: absolute;
+  top: -22px;
+  left: -36px;
+  width: 22px;
+  height: 22px;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.hero__item-text-2 {
+  width: 91px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+
+  & span {
+    font-weight: 800;
+    line-height: 130%;
+  }
+}
+
+.hero__item-3 {
+  position: relative;
+  background: radial-gradient(
+      105.47% 56.53% at 9.35% 4.41%,
+      rgba(223, 29, 255, 0.5) 0%,
+      rgba(72, 205, 255, 0) 100%
+    ),
+    radial-gradient(
+      105.62% 104.06% at 8.46% 139.64%,
+      rgba(62, 238, 227, 0.5) 35.28%,
+      rgba(62, 69, 238, 0) 100%
+    ),
+    linear-gradient(
+      148deg,
+      rgba(32, 33, 46, 0.8) 19.24%,
+      rgba(37, 40, 58, 0.4) 100%,
+      rgba(41, 46, 75, 0.28) 100%
+    );
+  box-shadow: -9px 0px 15px 0px rgba(182, 255, 251, 0.15) inset,
+    0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__item-3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    167deg,
+    rgba(255, 255, 255, 0.28) 7.16%,
+    rgba(89, 89, 89, 0.28) 89.96%
+  );
+
+  box-shadow: -9px 0px 15px 0px rgba(182, 255, 251, 0.15) inset,
+    0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__item-3::after {
+  content: url('/img/star-8.svg');
+  position: absolute;
+  bottom: -40px;
+  left: 34px;
+  width: 22px;
+  height: 22px;
+  animation: sparkle 4s ease-in-out infinite;
+}
+
+.hero__title-container {
+  position: relative;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 55px;
+  text-shadow: 0px 1px 8px rgba(255, 255, 255, 0.1);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 130%;
+  color: #4de1ff;
+
+  & span {
+    color: var(--gray-0-color);
+  }
+}
+
+.hero__title-text {
+  position: absolute;
+  z-index: -1;
+  top: -18px;
+  left: 70px;
+  display: flex;
+  width: 152px;
+  height: 32px;
+  transform: rotate(-3deg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--gray-0-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+  background: radial-gradient(
+      1066.33% 303.04% at 110.22% -60.42%,
+      rgba(72, 205, 255, 0) 0%,
+      rgba(132, 112, 255, 0.7) 100%
+    ),
+    radial-gradient(
+      85.58% 99.15% at -5.37% -16.9%,
+      rgba(61, 165, 245, 0.8) 0%,
+      rgba(62, 69, 238, 0) 100%
+    );
+  box-shadow: 0px 4px 70.5px 0px rgba(180, 180, 180, 0.3);
+  backdrop-filter: blur(50px);
+}
+
+.hero__button {
+  display: flex;
+  width: 345px;
+  padding: 20px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  margin-top: 52px;
+  color: var(--gray-0-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  position: relative;
+  border: 1px solid var(--gradient-light, rgba(255, 255, 255, 0.47));
+  background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(227deg, #18c8ff 7%, #933ffe 29.53%);
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
+  }
+
+  &:active {
+    transform: scale(0.95);
+    background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+  }
+}
+
+.hero__button::before {
+  content: url('/img/hero/bitcoin-2-mobile.webp');
+  position: absolute;
+  z-index: -1;
+  top: -142px;
+  right: -28px;
+  width: 177px;
+  height: 185px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__button::before {
+    content: url('/img/hero/bitcoin-2-mobile@2x.webp');
+  }
+}
