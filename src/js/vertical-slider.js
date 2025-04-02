@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let isScrolling = false;
     let isMobile = window.innerWidth <= 375;
 
-    slides.forEach((slide, index) => {
-      console.log(`Slide ${index} title: ${slide.dataset.title}`);
-    });
-
     const initSlider = () => {
       if (isMobile) {
         for (let i = 0; i < totalSlides; i++) {
@@ -37,8 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateTitle = () => {
-      console.log(`Updating title with currentIndex: ${currentIndex}`);
-
       if (titleElement && slides[currentIndex]) {
         const newTitle = slides[currentIndex].getAttribute('data-title');
         console.log(`New title: ${newTitle}`);
@@ -58,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       isScrolling = true;
       currentIndex--;
-      console.log(`Slide up, new currentIndex: ${currentIndex}`);
 
       updateTitle();
       scrollToActiveSlide();
@@ -73,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       isScrolling = true;
       currentIndex++;
-      console.log(`Slide down, new currentIndex: ${currentIndex}`);
 
       updateTitle();
       scrollToActiveSlide();
@@ -157,7 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex = visibleIndex;
             updateActiveCard();
             updateTitle();
-            console.log(`Mobile scroll, new currentIndex: ${currentIndex}`);
           }
         }, 100);
       });
