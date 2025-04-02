@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setupMobileScrollHandlers();
       } else {
-        for (let i = VISIBLE_SLIDES; i < totalSlides; i++) {
-          slides[i].style.display = 'none';
+        for (let i = 0; i < totalSlides; i++) {
+          slides[i].style.display = 'flex';
+          slides[i].style.opacity = '1';
         }
         setupDesktopScrollHandlers();
       }
@@ -45,7 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (newTitle && newTitle.trim() !== '') {
           titleElement.textContent = newTitle;
         } else {
-          titleElement.textContent = `Lörem ipsum dorade boktig till geosylig postmodern ${currentIndex}`;
+          titleElement.textContent = `Lörem ipsum dorade boktig till geosylig postmodern ${
+            currentIndex + 1
+          }`;
         }
       }
     };
@@ -57,64 +60,37 @@ document.addEventListener('DOMContentLoaded', () => {
       currentIndex--;
       console.log(`Slide up, new currentIndex: ${currentIndex}`);
 
-      const lastVisibleIndex = currentIndex + VISIBLE_SLIDES - 1;
-
-      if (slides[lastVisibleIndex + 1]) {
-        slides[lastVisibleIndex + 1].style.opacity = '0';
-        setTimeout(() => {
-          slides[lastVisibleIndex + 1].style.display = 'none';
-          isScrolling = false;
-        }, 300);
-      } else {
-        isScrolling = false;
-      }
-
-      if (slides[currentIndex]) {
-        slides[currentIndex].style.display = 'flex';
-        slides[currentIndex].style.opacity = '0';
-
-        setTimeout(() => {
-          slides[currentIndex].style.opacity = '1';
-        }, 50);
-      }
-
       updateTitle();
+      scrollToActiveSlide();
+
+      setTimeout(() => {
+        isScrolling = false;
+      }, 300);
     };
 
     const slideDown = () => {
       if (currentIndex >= totalSlides - 1 || isScrolling) return;
 
       isScrolling = true;
+      currentIndex++;
+      console.log(`Slide down, new currentIndex: ${currentIndex}`);
 
-      slides[currentIndex].style.opacity = '0';
+      updateTitle();
+      scrollToActiveSlide();
 
       setTimeout(() => {
-        slides[currentIndex].style.display = 'none';
-
-        if (currentIndex < totalSlides - 1) {
-          currentIndex++;
-        }
-
-        console.log(`Slide down, new currentIndex: ${currentIndex}`);
-
-        updateTitle();
-
-        const newVisibleIndex = Math.min(
-          currentIndex + VISIBLE_SLIDES - 1,
-          totalSlides - 1
-        );
-
-        if (newVisibleIndex < totalSlides && slides[newVisibleIndex]) {
-          slides[newVisibleIndex].style.display = 'flex';
-          slides[newVisibleIndex].style.opacity = '0';
-
-          setTimeout(() => {
-            slides[newVisibleIndex].style.opacity = '1';
-          }, 50);
-        }
-
         isScrolling = false;
       }, 300);
+    };
+
+    const scrollToActiveSlide = () => {
+      if (!slides[currentIndex]) return;
+
+      const slideTop = slides[currentIndex].offsetTop;
+      slider.scrollTo({
+        top: slideTop - 50,
+        behavior: 'smooth',
+      });
     };
 
     const handleWheel = e => {
@@ -148,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
           slides[i].classList.remove('active-slide');
         }
 
-        if (currentIndex >= 0 && currentIndex + 1 < totalSlides) {
-          slides[currentIndex + 1].classList.add('active-slide');
+        if (currentIndex >= 0 && currentIndex < totalSlides) {
+          slides[currentIndex].classList.add('active-slide');
         }
       };
 
@@ -191,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleResize = () => {
       const wasDesktop = !isMobile;
-      isMobile = window.innerWidth <= 375;
+      isMobile = window.innerWidth <= 768;
 
       if (wasDesktop !== !isMobile) {
         initSlider();
