@@ -39,6 +39,14 @@
   height: 185px;
 }
 
+.hero__img-3 {
+  position: absolute;
+  top: 68px;
+  right: calc(50% - 190px);
+  width: 52px;
+  height: 52px;
+}
+
 .hero__items {
   display: flex;
   align-items: center;
