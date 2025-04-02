@@ -249,7 +249,7 @@
     font-weight: 900;
     border-radius: 20px;
     margin: 0;
-    border: none;
+    outline: none;
     background: transparent;
     box-shadow: none;
     backdrop-filter: blur(0px);
