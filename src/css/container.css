@@ -7,14 +7,14 @@
 
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
-    padding: 0 130px;
+    max-width: 1180px;
+    padding: 0;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .container {
-    max-width: 1920px;
-    padding: 0 250px;
+    max-width: 1420px;
+    /* padding: 0 250px; */
   }
 }
