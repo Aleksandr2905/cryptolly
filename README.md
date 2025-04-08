@@ -81,5 +81,5 @@ Slider for displaying information about team members.
 
 The site is optimized for the following resolutions:
 
-- Mobile devices (up to 1439px)
+- Mobile devices (up to 1279px)
 - Desktops (from 1440px)

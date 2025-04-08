@@ -61,7 +61,7 @@ html {
   color: var(--primary-color);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-title {
     font-size: 50px;
   }

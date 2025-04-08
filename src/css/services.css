@@ -103,7 +103,7 @@
   animation: gradient-border 3s linear infinite;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .services__container {
     padding-top: 100px;
     padding-bottom: 100px;

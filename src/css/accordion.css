@@ -131,7 +131,7 @@
   display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .accordion__container {
     padding-top: 100px;
     padding-bottom: 100px;

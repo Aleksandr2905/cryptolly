@@ -208,7 +208,7 @@
   position: relative;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .vertical-slider__container {
     justify-content: space-between;
     padding-top: 100px;

@@ -127,7 +127,7 @@
     );
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .about__wrapper {
     flex-direction: row-reverse;
     margin-top: 72px;

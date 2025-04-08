@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const moduleItems = document.querySelectorAll('.modules__item');
-  const isDesktop = window.innerWidth >= 1440;
+  const isDesktop = window.innerWidth >= 1280;
 
   moduleItems.forEach(item => {
     const header = item.querySelector('.modules__item-header');
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('resize', () => {
-    const newIsDesktop = window.innerWidth >= 1440;
+    const newIsDesktop = window.innerWidth >= 1280;
     if (newIsDesktop !== isDesktop) {
       location.reload();
     }

@@ -269,7 +269,7 @@
   display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .modules__container {
     padding-top: 100px;
     padding-bottom: 100px;

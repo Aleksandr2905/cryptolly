@@ -288,7 +288,7 @@
   opacity: 1;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .team__container {
     padding-top: 100px;
     padding-bottom: 100px;

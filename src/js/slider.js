@@ -13,11 +13,11 @@ let swiper = new Swiper('.swiper', {
 });
 
 function getSpaceBetween() {
-  return window.innerWidth >= 1440 ? 50 : 18;
+  return window.innerWidth >= 1280 ? 50 : 18;
 }
 
 function getSlidesPerView() {
-  return window.innerWidth >= 1440 ? 3 : 1;
+  return window.innerWidth >= 1280 ? 3 : 1;
 }
 
 window.addEventListener('resize', () => {

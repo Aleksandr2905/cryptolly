@@ -190,7 +190,7 @@
   display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .footer__container {
     margin-top: 100px;
     padding-top: 100px;
