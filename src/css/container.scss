@@ -18,8 +18,8 @@ $grid_margin: math.percentage(math.div(130, 1920));
   }
 }
 
-// @media only screen and (min-width: 1920px) {
-//   .container {
-//     max-width: 1420px;
-//   }
-// }
+@media only screen and (min-width: 1920px) {
+  .container {
+    padding: 0 calc($grid_margin + 120px);
+  }
+}
