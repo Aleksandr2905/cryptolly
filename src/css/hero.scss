@@ -87,7 +87,8 @@
   height: 191px;
   transform: rotate(10deg);
   border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  outline-offset: -1px;
   background: radial-gradient(
       59.66% 93.52% at 17.69% 100%,
       rgba(223, 29, 255, 0.35) 0%,
@@ -160,7 +161,8 @@
   height: 242px;
   transform: rotate(10deg);
   border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  outline-offset: -1px;
   background: radial-gradient(
       88.53% 95.06% at 100% 5.38%,
       rgba(223, 29, 255, 0.5) 0%,
