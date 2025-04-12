@@ -1,5 +1,5 @@
 @use 'variables.scss' as *;
-
+@use 'container.scss' as *;
 
 /* Accordion */
 
@@ -138,6 +138,7 @@
   .accordion__container {
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-inline: $grid_margin;
   }
 
   .accordion__list-mobile {
