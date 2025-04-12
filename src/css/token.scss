@@ -18,7 +18,7 @@
 .token::before {
   content: '';
   /* position: absolute; */
-  top: -172px;
+  top: -280px;
   /* right: calc(50% - 220px); */
   /* width: 192px; */
   /* height: 272px; */
@@ -28,29 +28,29 @@
   width: 289px;
   height: 411px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  // bottom: 0;
+  right: 150px;
   background-image: linear-gradient(#174aff, #184bff);
   filter: blur(150px);
   z-index: -1;
 }
 
-.token::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: -338px;
-  right: calc(50% - 323px);
-  width: 400px;
-  height: 400px;
-  border-radius: 400px;
+// .token::after {
+//   content: '';
+//   position: absolute;
+//   z-index: -1;
+//   top: -338px;
+//   right: calc(50% - 323px);
+//   width: 400px;
+//   height: 400px;
+//   border-radius: 400px;
   /* background-image: linear-gradient(
     180deg,
     rgba(0, 194, 255, 0) 0%,
     #ff29c3 100%
   ); */
-  filter: blur(100px);
-}
+  // filter: blur(100px);
+// }
 
 .token__wrapper-title {
   display: flex;
@@ -141,13 +141,13 @@
     /* height: 412px; */
   }
 
-  .token::after {
-    top: -612px;
-    right: calc(50% - 944px);
-    width: 603px;
-    height: 603px;
-    border-radius: 603px;
-  }
+  // .token::after {
+  //   top: -612px;
+  //   right: calc(50% - 944px);
+  //   width: 603px;
+  //   height: 603px;
+  //   border-radius: 603px;
+  // }
 
   .token__description {
     font-size: 16px;
