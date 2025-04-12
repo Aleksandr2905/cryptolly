@@ -1,5 +1,5 @@
 @use 'variables.scss' as *;
-@use 'container.scss' as *;
+
 /* About */
 .about__container {
   padding-top: 60px;
@@ -136,7 +136,7 @@
     justify-content: space-between;
     height: 444px;
     padding: 49px 29px 54px 60px;
-    margin-inline: $grid_margin;
+   
   }
 
   .about__container {
