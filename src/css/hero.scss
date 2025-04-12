@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 /* Hero section */
 
 .hero__container {
@@ -132,7 +134,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 140%;
-  color: var(--gray-0-color);
+  color: $gray-0-color;
 
   & span {
     font-size: 12px;
@@ -277,7 +279,7 @@
   position: relative;
 
   & span {
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 }
 
@@ -306,7 +308,7 @@
   gap: 4px;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--gray-0-color);
+  color: $gray-0-color;
   font-size: 14px;
   font-weight: 600;
   line-height: 130%;
@@ -335,7 +337,7 @@
   gap: 10px;
   border-radius: 10px;
   margin-top: 52px;
-  color: var(--gray-0-color);
+  color: $gray-0-color;
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
@@ -486,7 +488,7 @@
     font-size: 68px;
     font-weight: 900;
     line-height: 130%;
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 
   .hero__title-text {
@@ -501,7 +503,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--gray-0-color);
+    color: $gray-0-color;
     font-size: 24px;
     border-radius: 25px;
 
@@ -545,7 +547,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 140%;
-    color: var(--gray-40-color);
+    color: $gray-40-color;
     margin-top: 16px;
   }
 

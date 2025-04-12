@@ -1,3 +1,6 @@
+@use 'variables.scss' as *;
+
+
 /* Accordion */
 
 .accordion__container {
@@ -72,12 +75,12 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 130%;
-  color: var(--gray-06-color);
+  color: $gray-06-color;
   transition: color 0.3s ease;
 }
 
 .accordion__item--active .accordion__item-header-title {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .accordion__item-header svg {
@@ -93,7 +96,7 @@
   gap: 24px;
   text-align: left;
   font-weight: 600;
-  color: var(--gray-0-color);
+  color: $gray-0-color;
   transition: max-height 0.3s ease-out;
 }
 
@@ -119,7 +122,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 146%;
-  color: var(--gray-30-color);
+  color: $gray-30-color;
 }
 
 .accordion__item-content h4 {
@@ -212,7 +215,7 @@
   }
 
   .accordion__item:hover {
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 
   .accordion__item-header-title {
@@ -220,11 +223,11 @@
   }
 
   .accordion__item:hover .accordion__item-header-title {
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 
   .accordion__item--active:hover .accordion__item-header-title {
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 
   .accordion__desktop-content {

@@ -1,3 +1,6 @@
+@use 'variables.scss' as *;
+
+
 .mobile-menu__backdrop {
   position: fixed;
   top: 0;
@@ -15,7 +18,7 @@
   right: 0;
   width: 271px;
   height: 100vh;
-  background-color: var(--bg-main-color);
+  background-color: $bg-main-color;
   overflow: hidden;
 }
 
@@ -73,7 +76,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
-  color: var(--gray-0-color);
+  color: $gray-0-color;
 }
 
 .mobile-menu__is-hidden {
@@ -95,7 +98,7 @@
   font-weight: 600;
   line-height: 140%;
   margin: auto 0 40px;
-  color: var(--gray-10-color);
+  color: $gray-10-color;
   border: 1px solid var(--gradient-light, rgba(255, 255, 255, 0.47));
   background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
 }

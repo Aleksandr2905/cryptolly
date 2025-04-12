@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 /* About */
 .about__container {
   padding-top: 60px;
@@ -63,7 +65,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--gray-30-color);
+  color: $gray-30-color;
 }
 
 .about__buttons {
@@ -81,8 +83,8 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 140%;
-  border: 1px solid var(--gray-0-color);
-  color: var(--gray-0-color);
+  border: 1px solid $gray-0-color;
+  color: $gray-0-color;
 
   &:hover {
     transform: scale(1.05);

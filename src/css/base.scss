@@ -1,27 +1,30 @@
-:root {
-  --primary-color: #b982ff;
-  --bg-main-color: #0b0b0f;
-  --section-title-color: #e9eef4;
-  --gray-0-color: #fff;
-  --gray-01-color: #f3f3f6;
-  --gray-02-color: #e3e3e3;
-  --gray-06-color: #767678;
-  --gray-09-color: #1b1b1b;
-  --gray-10-color: #f8f9fa;
-  --gray-30-color: #e9ecef;
-  --gray-40-color: #ced4da;
-  --gray-50-color: #adb5bd;
-  --gray-60-color: #6e7584;
-  --gray-80-color: #495057;
-  --gray-100-color: #212529;
-  --yellow-color: #ffcf0f;
-  --gradient-color: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
-  --gradient-border: linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff)
-    border-box;
-}
+@use 'variables.scss' as *;
+
+// :root {
+//   --primary-color: #b982ff;
+//   --bg-main-color: #0b0b0f;
+//   --section-title-color: #e9eef4;
+//   --gray-0-color: #fff;
+//   --gray-01-color: #f3f3f6;
+//   --gray-02-color: #e3e3e3;
+//   --gray-06-color: #767678;
+//   --gray-09-color: #1b1b1b;
+//   --gray-10-color: #f8f9fa;
+//   --gray-30-color: #e9ecef;
+//   --gray-40-color: #ced4da;
+//   --gray-50-color: #adb5bd;
+//   --gray-60-color: #6e7584;
+//   --gray-80-color: #495057;
+//   --gray-100-color: #212529;
+//   --yellow-color: #ffcf0f;
+//   --gradient-color: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+//   --gradient-border: linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff)
+//     border-box;
+// }
+
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: $font-stack;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -33,8 +36,8 @@ body {
   min-height: 100vh;
   width: 100%;
 
-  color: var(--gray-0-color);
-  background-color: var(--bg-main-color);
+  color: $gray-0-color;
+  background-color: $bg-main-color;
 }
 
 html {
@@ -50,7 +53,7 @@ html {
   font-size: 32px;
   font-weight: 900;
   line-height: 1.3;
-  color: var(--section-title-color);
+  color: $section-title-color;
 }
 
 .section-name {
@@ -58,7 +61,7 @@ html {
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 4px;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 @media (min-width: 1280px) {

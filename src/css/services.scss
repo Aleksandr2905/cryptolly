@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 /* Services section */
 
 .services__container {
@@ -72,7 +74,7 @@
   font-size: 24px;
   font-weight: 900;
   line-height: 130%;
-  color: var(--gray-0-color);
+  color: $gray-0-color;
 }
 
 .services__item-subtitle,
@@ -85,7 +87,7 @@
 }
 
 .services__item-description {
-  color: var(--gray-30-color);
+  color: $gray-30-color;
 }
 
 .services__item-line {
@@ -95,9 +97,9 @@
 }
 
 .services__item:hover {
-  background: linear-gradient(var(--bg-main-color), var(--bg-main-color))
+  background: linear-gradient($bg-main-color, $bg-main-color)
       padding-box,
-    var(--gradient-border);
+    $gradient-border;
   border: 2px solid transparent;
   background-size: 200% 200%;
   animation: gradient-border 3s linear infinite;
@@ -152,7 +154,7 @@
   }
 
   .services__item-description {
-    color: var(--gray-50-color);
+    color: $gray-50-color;
   }
 }
 

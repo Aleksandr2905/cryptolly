@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateTitle = () => {
       if (titleElement && slides[currentIndex]) {
         const newTitle = slides[currentIndex].getAttribute('data-title');
-        console.log(`New title: ${newTitle}`);
 
         if (newTitle && newTitle.trim() !== '') {
           titleElement.textContent = newTitle;

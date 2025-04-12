@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 /* Header styles */
 
 .header__container {
@@ -66,11 +68,11 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
-    color: var(--gray-0-color);
+    color: $gray-0-color;
   }
 
   .header__nav-item:hover {
-    color: var(--primary-color);
+    color: $primary-color;
   }
 
   .header__btn {
@@ -83,7 +85,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 140%;
-    color: var(--gray-10-color);
+    color: $gray-10-color;
     border: 1px solid rgba(255, 255, 255, 0.47);
     background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
 

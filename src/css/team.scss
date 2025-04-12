@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 /* Team section */
 
 .team__container {
@@ -29,7 +31,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
-  color: var(--gray-30-color);
+  color: $gray-30-color;
 }
 
 .team__slider-container {
@@ -89,7 +91,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .team__slide-profile-info-name {
@@ -142,14 +144,14 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 130%;
-  color: var(--gray-40-color);
+  color: $gray-40-color;
 }
 
 .team__slide-info-subtitle {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  color: var(--gray-30-color);
+  color: $gray-30-color;
 }
 
 .team__slide-info-rating {
@@ -173,7 +175,7 @@
   font-weight: 400;
   line-height: 140%;
   height: 119px;
-  color: var(--gray-30-color);
+  color: $gray-30-color;
   margin: 9px 0 69px;
 }
 

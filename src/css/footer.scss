@@ -1,3 +1,6 @@
+@use 'variables.scss' as *;
+
+
 /* Footer */
 .footer {
   overflow: hidden;
@@ -54,7 +57,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4;
-  color: var(--gray-40-color);
+  color: $gray-40-color;
 }
 
 .footer__wrapper-input {
@@ -76,17 +79,17 @@
   box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset,
     0px 2px 2px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(20px);
-  background-color: var(--gray-10-color);
-  color: var(--gray-100-color);
+  background-color: $gray-10-color;
+  color: $gray-100-color;
 }
 
 .footer__wrapper-input input::placeholder {
-  color: var(--gray-60-color);
+  color: $gray-60-color;
 }
 
 .footer__wrapper-input input:focus,
 .footer__wrapper-input input:hover {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid $primary-color;
   outline-offset: -4px;
 }
 
@@ -125,7 +128,7 @@
   font-weight: 600;
   line-height: 140%;
   border-radius: 28px;
-  border: 1px solid var(--gray-0-color);
+  border: 1px solid $gray-0-color;
   background: radial-gradient(
       611.08% 134.62% at -28.26% 75.86%,
       rgba(223, 29, 255, 0.5) 0%,
@@ -142,18 +145,18 @@
       rgba(41, 46, 75, 0.17) 100%,
       rgba(48, 58, 120, 0.5) 100%
     );
-  color: var(--gray-0-color);
+  color: $gray-0-color;
 }
 
 .footer__nav-list {
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
-  color: var(--gray-40-color);
+  color: $gray-40-color;
 }
 
 .footer__nav-list a:hover {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .footer__wrapper-copyright {
