@@ -1,5 +1,5 @@
 @use 'variables.scss' as *;
-
+@use 'container.scss' as *;
 /* Modules section */
 
 .modules__container {
@@ -276,6 +276,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     gap: 80px;
+    margin-inline: $grid_margin;
   }
 
   .modules__container::before {

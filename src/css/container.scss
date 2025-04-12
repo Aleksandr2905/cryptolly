@@ -1,8 +1,8 @@
 @use "sass:math";
 
 $grid_margin: math.percentage(math.div(130, 1920));
-$grid_width: math.percentage(math.div(80, (1920 - 130 * 2)));
-$grid_gutter: math.percentage(math.div(20, (1920 - 130 * 2)));
+// $grid_width: math.percentage(math.div(80, (1920 - 130 * 2)));
+// $grid_gutter: math.percentage(math.div(20, (1920 - 130 * 2)));
 
 .container {
   min-width: 320px;
