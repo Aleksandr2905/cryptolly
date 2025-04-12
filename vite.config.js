@@ -26,4 +26,10 @@ function htmlPartialsPlugin() {
 
 export default defineConfig({
   plugins: [htmlPartialsPlugin()],
+  assetsInclude: ['**/*.woff', '**/*.woff2'],
+  resolve: {
+    alias: {
+      '@fonts': path.resolve(__dirname, 'src/fonts'),
+    },
+  },
 });
