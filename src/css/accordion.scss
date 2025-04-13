@@ -147,8 +147,9 @@
 
   .accordion__desktop-wrapper {
     display: block;
-    padding: 2px;
+    // padding: 2px;
     border-radius: 20px;
+   
     background: radial-gradient(
         81.66% 66.51% at 96.02% 90.71%,
         rgba(223, 29, 255, 0.4) 0%,
@@ -171,11 +172,19 @@
   .accordion__desktop {
     display: flex;
     align-items: center;
+    gap: 50px;
     justify-content: space-between;
     padding: 57px 78px;
-    border-radius: 18px;
+    border-radius: 20px;
     backdrop-filter: blur(52px);
     position: relative;
+    border: 1px solid rgba(181, 181, 181, 0.15);
+  }
+
+  .accordion__desktop-line{
+    width: 1px;
+    height: 454px;
+    background: rgba(181, 181, 181, 0.15);
   }
 
   .accordion__desktop::before {

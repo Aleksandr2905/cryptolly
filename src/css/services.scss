@@ -103,6 +103,7 @@
     $gradient-border;
   border: 2px solid transparent;
   background-size: 200% 200%;
+      box-shadow: 2px 2px 9px 3px rgba(161, 128, 255, 0.30);
   animation: gradient-border 3s linear infinite;
 }
 

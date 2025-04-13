@@ -62,27 +62,44 @@
   text-align: center;
   border-radius: 20px;
   padding: 18px;
-  background: radial-gradient(
-      68.34% 88.05% at 9.86% -26.12%,
+  // background: radial-gradient(
+  //     68.34% 88.05% at 9.86% -26.12%,
 
-      rgba(62, 238, 227, 0.5) 0%,
-      rgba(62, 69, 238, 0) 100%
-    ),
-    radial-gradient(
-      81.18% 98.69% at 113.3% 120.61%,
-      rgba(223, 29, 255, 0.35) 0%,
-      rgba(72, 205, 255, 0) 100%
-    ),
-    linear-gradient(
-      98deg,
-      rgba(41, 46, 75, 0.23) 0%,
-      rgba(37, 40, 58, 0.11) 100%,
-      rgba(41, 46, 75, 0.11) 100%
-    );
+  //     rgba(62, 238, 227, 0.5) 0%,
+  //     rgba(62, 69, 238, 0) 100%
+  //   ),
+  //   radial-gradient(
+  //     81.18% 98.69% at 113.3% 120.61%,
+  //     rgba(223, 29, 255, 0.35) 0%,
+  //     rgba(72, 205, 255, 0) 100%
+  //   ),
+  //   linear-gradient(
+  //     98deg,
+  //     rgba(41, 46, 75, 0.23) 0%,
+  //     rgba(37, 40, 58, 0.11) 100%,
+  //     rgba(41, 46, 75, 0.11) 100%
+  //   );
   backdrop-filter: blur(50px);
-  outline: 1px solid rgba(255, 255, 255, 0.1);
-  outline-offset: -1px;
+  border: 2px solid transparent;
+  // outline: 1px solid rgba(255, 255, 255, 0.1);
+  // outline-offset: -1px;
 }
+
+.token__item-bg {
+  border-radius: 20px;
+  background: radial-gradient(68.34% 88.05% at 9.86% -26.12%,
+  
+        rgba(62, 238, 227, 0.5) 0%,
+        rgba(62, 69, 238, 0) 100%),
+      radial-gradient(81.18% 98.69% at 113.3% 120.61%,
+        rgba(223, 29, 255, 0.35) 0%,
+        rgba(72, 205, 255, 0) 100%),
+      linear-gradient(98deg,
+        rgba(41, 46, 75, 0.23) 0%,
+        rgba(37, 40, 58, 0.11) 100%,
+        rgba(41, 46, 75, 0.11) 100%);
+}
+
 
 .token__item-title {
   font-size: 20px;
@@ -129,14 +146,24 @@
   .token__item {
     gap: 18px;
     text-align: start;
+    height: 100%;
     padding: 30px 37px;
   }
+
+    .token__item:hover{
+      background: linear-gradient($bg-main-color, $bg-main-color) padding-box,
+        $gradient-border;
+      border: 2px solid transparent;
+      background-size: 200% 200%;
+      box-shadow: 2px 2px 9px 3px rgba(161, 128, 255, 0.30);
+      animation: gradient-border 3s linear infinite;
+    }
 
   .token__item-icon {
     display: block;
   }
 
-  .token__item:nth-child(2) {
+  .token__item-bg:nth-child(2) {
     background: radial-gradient(
         46.55% 56.79% at 0% 105.61%,
         rgba(62, 238, 227, 0.5) 0%,
