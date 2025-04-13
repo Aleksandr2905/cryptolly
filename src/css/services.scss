@@ -113,6 +113,8 @@
   }
 
   .services__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
@@ -130,7 +132,7 @@
   }
 
   .services__item {
-    width: 380px;
+    // width: 380px;
     gap: 16px;
     padding: 19px 24px;
     border: 2px solid transparent;
@@ -161,7 +163,7 @@
 
 @media (min-width: 1920px) {
   .services__item {
-    width: 460px;
+    // width: 460px;
     padding: 19px 64px;
   }
 }

@@ -121,7 +121,9 @@
   }
 
   .token__list {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .token__item {
@@ -167,7 +169,7 @@
     padding: 29px 77px;
   }
 
-  .token__item-description {
-    width: 304px;
-  }
+  // .token__item-description {
+  //   width: 304px;
+  // }
 }
