@@ -62,27 +62,8 @@
   text-align: center;
   border-radius: 20px;
   padding: 18px;
-  // background: radial-gradient(
-  //     68.34% 88.05% at 9.86% -26.12%,
-
-  //     rgba(62, 238, 227, 0.5) 0%,
-  //     rgba(62, 69, 238, 0) 100%
-  //   ),
-  //   radial-gradient(
-  //     81.18% 98.69% at 113.3% 120.61%,
-  //     rgba(223, 29, 255, 0.35) 0%,
-  //     rgba(72, 205, 255, 0) 100%
-  //   ),
-  //   linear-gradient(
-  //     98deg,
-  //     rgba(41, 46, 75, 0.23) 0%,
-  //     rgba(37, 40, 58, 0.11) 100%,
-  //     rgba(41, 46, 75, 0.11) 100%
-  //   );
   backdrop-filter: blur(50px);
   border: 2px solid transparent;
-  // outline: 1px solid rgba(255, 255, 255, 0.1);
-  // outline-offset: -1px;
 }
 
 .token__item-bg {
@@ -195,8 +176,4 @@
   .token__item {
     padding: 29px 77px;
   }
-
-  // .token__item-description {
-  //   width: 304px;
-  // }
 }
