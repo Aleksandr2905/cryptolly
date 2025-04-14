@@ -100,3 +100,22 @@ html {
     opacity: 0.5;
   }
 }
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: rgba(72, 205, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gradient-color;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e44eedd;
+}
